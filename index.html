@@ -36,6 +36,9 @@
 
     <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -43,7 +46,6 @@
 
     <div class="general-container">
         <header>
-
             <div class="nav-content">
 
                 <a href="/index.html" class="button-icon">
@@ -59,25 +61,36 @@
                 <nav>
                     <ul data-visible="false" id="primary-navigation">
                         <li>
-                            <a class="link-header" href="/sobre/sobre.html">
+                            <a class="link-header" href="/index.html">
                                 Home
                             </a>
                         </li>
 
                         <li>
-                            <a class="link-header" href="/pags-sec/contato.html">
+                            <a class="link-header" href="/pags-secundarias/quem-somos.html">
                                 Quem somos
                             </a>
                         </li>
 
-                        <li>
-                            <a class="link-header" href="#">
+                        <li class="dropdown show">
+                            <a class="link-header dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Soluções
                             </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="/pags-secundarias/web-design.html">Web design</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/pags-secundarias/midia.html">Mídia</a></li>
+                                <li><a class="dropdown-item" href="/pags-secundarias/social-media.html">Social media</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/pags-secundarias/seo.html">SEO</a></li>
+                                <li><a class="dropdown-item" href="/pags-secundarias/videos.html">Vídeos</a></li>
+                            </ul>
                         </li>
 
                         <li>
-                            <a class="link-header" href="#">
+                            <a class="link-header" href="/pags-secundarias/fale-conosco.html">
                                 Fale conosco
                             </a>
                         </li>
@@ -96,9 +109,11 @@
                     basta um Click
                 </h1>
 
-                <button class="btn btn-header">
-                    O que fazemos
-                </button>
+                <a class="btn-header-link" href="#scroll">
+                    <button class="btn btn-header">
+                        O que fazemos
+                    </button>
+                </a>
 
                 <div id="scroll"></div>
             </div>
@@ -199,23 +214,22 @@
 
                 <div id="slider-time-click">
                     <div class="slider-item">
-                        <img src="/assets/images/time-click/img-time.png" alt="imagem do integrante 'Leonardo'"
+                        <img src="/assets/images/time-click/click-desing.png" alt="logo da click design"
                             class="img-time">
-                        <p class="nome-integrante">Leonardo XXXX</p>
+                        <p class="nome-integrante">Click Design</p>
                         <p class="funcao">CEO</p>
                     </div>
 
                     <div class="slider-item">
-                        <img src="/assets/images/time-click/img-time.png" alt="imagem do integrante 'Leonardo'"
+                        <img src="/assets/images/time-click/click-suporte.PNG" alt="logo da click suporte"
                             class="img-time">
-                        <p class="nome-integrante">Leonardo XXXX</p>
+                        <p class="nome-integrante">Click Suporte</p>
                         <p class="funcao">CEO</p>
                     </div>
 
                     <div class="slider-item">
-                        <img src="/assets/images/time-click/img-time.png" alt="imagem do integrante 'Leonardo'"
-                            class="img-time">
-                        <p class="nome-integrante">Leonardo XXXX</p>
+                        <img src="/assets/images/time-click/logo-nm-preto.png" alt="logo da new mode" class="img-time">
+                        <p class="nome-integrante">New Mode</p>
                         <p class="funcao">CEO</p>
                     </div>
 
@@ -261,18 +275,14 @@
                         <img src="/assets/images/nossos-servicos/web-design-icon.png"
                             alt="ícone representando web design" class="nossos-serv-img">
                         <p class="nossos-serv-txt">
-                            Nossa área de Web Design hoje conta com a parceria da empresa NM - Web Design que projeta
-                            diretamente os textos e artes para os sites, trazendo assim conteúdos originais e focado na
-                            Web
-                            para não só apenas apresentar a marca de nossos clientes, mas sim transormar em referência
-                            na
-                            Web e focando em levar o mesmo sempre as primeiras páginas do Google, captando novos
-                            clientes e
-                            influenciando na vida de todos.
+                            O futuro está na Web, desta forma, nós da Click em conjunto com a NM Web Design fazemos um
+                            trabalho de revolução digital dentro da empresa e captando novos clientes
                         </p>
-                        <button class="nossos-serv-button">
-                            Saiba mais!
-                        </button>
+                        <a href="/pags-secundarias/web-design.html" class="nossos-serv-link">
+                            <button class="nossos-serv-button">
+                                Saiba mais!
+                            </button>
+                        </a>
                     </div>
 
                     <div class="nossos-serv-content">
@@ -282,15 +292,15 @@
                         <img src="/assets/images/nossos-servicos/midia-icon.png" alt="ícone representando web design"
                             class="nossos-serv-img">
                         <p class="nossos-serv-txt">
-                            A mídia de uma empresa muda a forma como seus clientes a encherga, deixando de ser apenas
-                            uma
-                            marca para entrar na história, desta maneira a Click trabalha de maneira responsável para
-                            otimizar os custos de sua marca. Em um Click, sua empresa encontra a direção ideal para
-                            segmentar o público-alvo o transformando em seus clientes e confirmando a sua volta.
+                            A mídia de uma empresa muda a forma como seus clientes a enxerga, e para isso a Click
+                            trabalha diariamente para encontrar a direção ideal para seguementar o público-alvo o
+                            transformando em seus clientes e confirmando a sua volta
                         </p>
-                        <button class="nossos-serv-button">
-                            Saiba mais!
-                        </button>
+                        <a href="/pags-secundarias/midia.html" class="nossos-serv-link">
+                            <button class="nossos-serv-button">
+                                Saiba mais!
+                            </button>
+                        </a>
                     </div>
 
                     <div class="nossos-serv-content">
@@ -300,18 +310,15 @@
                         <img src="/assets/images/nossos-servicos/social-media-icon.png"
                             alt="ícone representando web design" class="nossos-serv-img">
                         <p class="nossos-serv-txt">
-                            Nós da Click trabalhamos pelo seu negócio com profissionais responsáveis pela gestão de uma
-                            ou
-                            várias plataformas de redes sociais de sua empresa, facilitando o encontro entre você
-                            empresa e
-                            seus futuros clientes.
-                            Com a Click você pode contar e podemos garantir a entrega da essência da marca e sem
-                            esquecer a
-                            tradição da mesma.
+                            Nós da Click trabalhamos por você e para você, guiando seu negócio nos canais digitais,
+                            facilitando o encontro entre a empresa e seus futuros clientes. Na Click garantimos a
+                            entrega da essência da marca, sem esquecer a tradição
                         </p>
-                        <button class="nossos-serv-button">
-                            Saiba mais!
-                        </button>
+                        <a href="/pags-secundarias/social-media.html" class="nossos-serv-link">
+                            <button class="nossos-serv-button">
+                                Saiba mais!
+                            </button>
+                        </a>
                     </div>
 
                     <div class="nossos-serv-content">
@@ -321,17 +328,15 @@
                         <img src="/assets/images/nossos-servicos/seo-icon.png" alt="ícone representando web design"
                             class="nossos-serv-img">
                         <p class="nossos-serv-txt">
-                            SEO significa Search Engine Optimization (Otimização para motores de busca) e pode ter
-                            certeza
-                            que isso não só é importante, como é fundamental para seu negócio na Web.
-                            Desta forma, com a Click você vai poder contar para que seu site ou blog possa aparecer na
-                            primeira página do Google de forma a se destacar no meio digital selecionando
-                            palavras-chave,
-                            ajustando o conteúdo e atraindo tráfego de forma orgânica
+                            SEO (Otimização para motores de busca) é hoje a chave para qualquer negócio na Web. Desta
+                            maneira a Click trabalha para que seu site esteja sempre na frente, sendo os primeiros nas
+                            páginas do Google, e otimizando sempre pensando nos seus clientes
                         </p>
-                        <button class="nossos-serv-button">
-                            Saiba mais!
-                        </button>
+                        <a href="/pags-secundarias/seo.html" class="nossos-serv-link">
+                            <button class="nossos-serv-button">
+                                Saiba mais!
+                            </button>
+                        </a>
                     </div>
 
                     <div class="nossos-serv-content">
@@ -341,17 +346,15 @@
                         <img src="/assets/images/nossos-servicos/blog-icon.png" alt="ícone representando web design"
                             class="nossos-serv-img">
                         <p class="nossos-serv-txt">
-                            Em um click na Click todos poderão saber as novidades do mercado e ficar atentos as novas
-                            tendências sempre através das matérias disponíveis em nosso blog, aqui em nosso site e em
-                            nossas
-                            redes sociais.
-                            Clique no Saiba mais e fique de olho em todas as novidades do marketing digital e das mídias
-                            socias para seu negócio.
-
+                            Quer saber tudo sobre as novidades do mercado e de olho nas novas tendências da tecnologia?
+                            Pensando nisso a Click tem seus Blog aqui em nosso site e em nossas redes sociais, então não
+                            fique fora dessa, e seja um expert do meio digital
                         </p>
-                        <button class="nossos-serv-button">
-                            Saiba mais!
-                        </button>
+                        <a href="/pags-secundarias/web-design.html" class="nossos-serv-link">
+                            <button class="nossos-serv-button">
+                                Saiba mais!
+                            </button>
+                        </a>
                     </div>
 
                     <div class="nossos-serv-content">
@@ -361,17 +364,15 @@
                         <img src="/assets/images/nossos-servicos/videos-icon.png" alt="ícone representando web design"
                             class="nossos-serv-img">
                         <p class="nossos-serv-txt">
-                            Hoje na Click contamos com uma equipe especializada focado apenas em vídeos e edição para
-                            trabalhar junto com sua empresa, focando em materiais originais e 100% fiél aos nossos
-                            clientes,
-                            transbordando fidelidade e originalidade.
-                            Desta maneira fazemos em conjunto um trabalho inovador e focado nas redes, trazendo
-                            engajamento
-                            e mudando a forma que sua empresa é enchergada no mercado.
+                            Na Click trabalhamos com uma equipe especializada na área de vídeos, criando materiais
+                            originais e 100% fiél aos nossos clientes, trazendo assim engajamento e mudando a forma que
+                            sua empresa é vista no mercado
                         </p>
-                        <button class="nossos-serv-button">
-                            Saiba mais!
-                        </button>
+                        <a href="/pags-secundarias/videos.html" class="nossos-serv-link">
+                            <button class="nossos-serv-button">
+                                Saiba mais!
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -438,30 +439,6 @@
 
                     <div class="footer-content">
                         <h5 class="footer-title">
-                            Blog
-                        </h5>
-
-                        <ul class="list-footer">
-                            <li>
-                                <a href="#" class="list-footer-item">
-                                    Últimos posts
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-footer-item">
-                                    CRM
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-footer-item">
-                                    FAQ
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-content">
-                        <h5 class="footer-title">
                             Entre em contato
                         </h5>
 
@@ -490,27 +467,21 @@
 
                     <ul class="redes-sociais">
                         <li class="redes-sociais-item">
-                            <a href="#" class="redes-sociais-link">
-                                <img src="/assets/images/footer/linkedin-icon.png" alt="" class="redes-sociais-icon">
+                            <a href="#" class="redes-sociais-icon">
+                                <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </li>
 
                         <li class="redes-sociais-item">
-                            <a href="#" class="redes-sociais-link">
-                                <img src="/assets/images/footer/facebook-icon.png" alt="" class="redes-sociais-icon">
-                            </a>
+                            <a href="#" target="_blank" class="redes-sociais-icon"><i class="fab fa-facebook"></i></a>
                         </li>
 
                         <li class="redes-sociais-item">
-                            <a href="#" class="redes-sociais-link">
-                                <img src="/assets/images/footer/instagram-icon.png" alt="" class="redes-sociais-icon">
-                            </a>
+                            <a href="#" class="redes-sociais-icon" target="_blank"><i class="fab fa-instagram"></i></a>
                         </li>
 
                         <li class="redes-sociais-item">
-                            <a href="#" class="redes-sociais-link">
-                                <img src="/assets/images/footer/whatsapp-icon.png" alt="" class="redes-sociais-icon">
-                            </a>
+                            <a href="#" class="redes-sociais-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
                         </li>
                     </ul>
 
@@ -525,7 +496,6 @@
                     </div>
 
                 </div>
-
             </footer>
         </main>
 
@@ -535,6 +505,7 @@
     <script src="/scripts/carousel.js"></script>
     <script src="/scripts/nav-toggle-animation.js"></script>
     <script src="/scripts/nav-transition.js"></script>
+    <script src="/scripts/dropdown.js"></script>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -546,44 +517,42 @@
 
     <script src="/scripts/mask-tel.js"></script>
 
-    
+
     <script type="text/javascript">
         if (window.innerWidth > 900) {
             $('#box-nossos-serv').slick({
                 centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 3
-              });
-        }else{
+                centerPadding: '80px',
+                slidesToShow: 3,
+                variableWidth: true,
+                dots: true
+            });
+        } else {
             $('#box-nossos-serv').slick({
-            dots: true,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 3,
-            centerMode: true,
-            variableWidth: true,
-            adaptativeleHeigth: true,
-            responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        slidesToShow: 3
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 3,
+                centerMode: true,
+                variableWidth: true,
+                adaptativeleHeigth: true,
+                responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 1
+                        }
                     }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
+                ]
+            });
         }
-    </script>
-
-    <script type="text/javascript">
-        
     </script>
 
 </body>
