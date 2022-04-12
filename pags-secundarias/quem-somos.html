@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -40,6 +41,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/assets/images/header-pag-inicial/favicon.ico">
 </head>
 
 <body>
@@ -73,13 +75,13 @@
                             </a>
                         </li>
 
-                        <li class="dropdown show">
-                            <a class="link-header dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="wrapper" id="wrapper">
+                            <a class="link-header click-text" role="button">
                                 Soluções
+                                <span class="arrow"></span>
                             </a>
 
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <ul class="dropdown-menu-ul">
                                 <li><a class="dropdown-item" href="/pags-secundarias/web-design.html">Web design</a>
                                 </li>
                                 <li><a class="dropdown-item" href="/pags-secundarias/midia.html">Mídia</a></li>
@@ -152,22 +154,22 @@
 
                         <ul class="list-footer">
                             <li>
-                                <a href="#" class="list-footer-item">
+                                <a href="/pags-secundarias/midia.html" class="list-footer-item">
                                     Mídia
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="list-footer-item">
+                                <a href="/pags-secundarias/seo.html" class="list-footer-item">
                                     SEO
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="list-footer-item">
+                                <a href="/pags-secundarias/social-media.html" class="list-footer-item">
                                     Social media
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="list-footer-item">
+                                <a href="/pags-secundarias/web-design.html" class="list-footer-item">
                                     Web design
                                 </a>
                             </li>
@@ -181,14 +183,8 @@
 
                         <ul class="list-footer">
                             <li>
-                                <a href="#" class="list-footer-item">
-                                    +55 (11) 9XXXX-XXXX
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-footer-item">
-                                    agenciaclick@
-                                    gmail.com
+                                <a class="list-footer-item">
+                                    contato@designclick.com.br
                                 </a>
                             </li>
                         </ul>
@@ -210,16 +206,13 @@
                         </li>
 
                         <li class="redes-sociais-item">
-                            <a href="#" target="_blank" class="redes-sociais-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/aclickdesign" target="_blank" class="redes-sociais-icon"><i class="fab fa-facebook"></i></a>
                         </li>
 
                         <li class="redes-sociais-item">
-                            <a href="#" class="redes-sociais-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/aclickdesign/?hl=pt" class="redes-sociais-icon" target="_blank"><i class="fab fa-instagram"></i></a>
                         </li>
 
-                        <li class="redes-sociais-item">
-                            <a href="#" class="redes-sociais-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        </li>
                     </ul>
 
                     <p class="direitos-footer">
@@ -241,7 +234,7 @@
 
     <script src="/scripts/nav-toggle-animation.js"></script>
     <script src="/scripts/nav-transition.js"></script>
-
+    <script src="/scripts/dropdown.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>

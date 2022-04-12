@@ -74,7 +74,26 @@ li {
     color: rgba(198, 220, 231, 0.92);
 }
 
+.dropdown-menu-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.click-text:visited{
+    color: #FFF;
+}
+
+.click-text:focus{
+    outline: none;
+    text-decoration: none;
+}
+
+.dropdown-item{
+    color: #FFF;
+    font-size: 1.65rem;
+    margin: 0.5rem 0;
+}
 
 #myVideo {
     position: absolute;
@@ -364,17 +383,49 @@ li {
 .form-item{
     font-size: 1.8rem;
     margin: 1.5rem 0;
-    padding: 1rem;
+    padding: 1rem !important; 
     border-radius: 1.2rem;
     border: 1px solid #CED4DA;
 }
 
-textarea{
-    resize: none;
+.checkbox-items{
+    display: grid;
+    grid-template-columns: 2;
+    grid-row: 3;
+    grid-column: span 2;
 }
 
-.option-item{
-    font-size: 1.5rem;   
+.escolha-serv{
+    grid-row: 1;
+    grid-column: span 2;
+    text-align: center;
+}
+
+.checkbox-content{
+    justify-self: center;
+}
+
+.checkbox-items .checkbox-content:nth-child(odd){
+    grid-column: 2;
+    margin-left: 0.5rem;
+}
+
+.checkbox-items .form-item{
+    font-weight: 400;
+    width: 12rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.checkbox-content input{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0;
+    margin-right: 0.5rem;
+}
+
+textarea{
+    resize: none;
 }
 
 .form-button{
@@ -521,6 +572,7 @@ ul{
     color: rgb(32, 32, 32);
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    word-wrap: break-word;
 }
 
 .footer-line{
@@ -669,9 +721,30 @@ ul{
 }
 
 .confiam-na-click{
+    display: grid;
+}
+
+.confiam-na-click h2{
+    text-align: center;
+    margin: 5rem 0 3rem 0;
+}
+
+.confiam-na-click a{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 20rem;
+    align-self: center;
+    justify-self: center;
+    margin: 3rem 0;
+}
+
+.confiam-na-click a img{
+    width: 20rem;
+}
+
+.img-diff{
+    width: 15rem !important;    
 }
 
 .sobre-solucoes{
@@ -951,6 +1024,14 @@ ul{
         width: 55rem;
     }
 
+    .dropdown-menu-ul{
+        position: absolute;
+    }
+
+    .dropdown-bg-transition{
+        background: linear-gradient(0deg, #2296AF 0%, rgba(116, 33, 52, 0) 239.35%);
+    }
+
     #servicos{
         grid-row: 3;
         grid-column: span 2;
@@ -979,30 +1060,14 @@ ul{
 
     .nossos-serv-button:hover{
         color: #FFF;
+        background: rgb(27, 187, 233);
     }
 
     .nossos-serv-button{
         position: relative;
         z-index: 100;
         text-transform: uppercase;
-    }
-
-    .nossos-serv-button::before{
-        position: absolute;
-		content: '';
-		top: 0;
-		left: 0;
-		width: 0;
-		height: 102%;
-        z-index: -1;
-        border-radius: 2.25rem;
-        background: rgb(27, 187, 233);
-		-webkit-transition: width 0.2s;
-		transition: width 0.2s;
-    }
-
-    .nossos-serv-button:hover::before{
-        width: 100%;
+        transition: 0.3s;
     }
 
     .slick-slider{
@@ -1129,6 +1194,11 @@ ul{
         background-color: #2296AF;
         color: #FFF;
         justify-self: center;
+        transition: 0.2s;
+    }
+    
+    .btn-form-solucoes:hover{
+        background-color: #1c7e94;   
     }
 
     .midia{
@@ -1200,6 +1270,15 @@ ul{
         align-content: center;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         margin: 5rem 0;
+    }
+
+    .confiam-na-click{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .confiam-na-click h2{
+        grid-row: 1;
+        grid-column: span 3;
     }
 
     .title-solucoes2{
@@ -1350,7 +1429,7 @@ ul{
 
     @supports (backdrop-filter: blur(0.45rem)) {
         #primary-navigation {
-            background: linear-gradient(349.93deg, rgba(254, 254, 255, 0) 5.26%, #2296AFB2 85.94%);
+            background: linear-gradient(349.93deg, rgba(254, 254, 255, 0) 5.26%, #2296AFB2 55.94%);
             /* background:rgba(107, 107, 107, 0.3) ; */
             backdrop-filter: blur(0.25rem);
         }

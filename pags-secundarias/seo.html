@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -40,6 +41,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" href="/assets/images/header-pag-inicial/favicon.ico">
 </head>
 
 <body>
@@ -73,13 +75,13 @@
                             </a>
                         </li>
 
-                        <li class="dropdown show">
-                            <a class="link-header dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="wrapper" id="wrapper">
+                            <a class="link-header click-text" role="button">
                                 Soluções
+                                <span class="arrow"></span>
                             </a>
 
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <ul class="dropdown-menu-ul">
                                 <li><a class="dropdown-item" href="/pags-secundarias/web-design.html">Web design</a>
                                 </li>
                                 <li><a class="dropdown-item" href="/pags-secundarias/midia.html">Mídia</a></li>
@@ -109,19 +111,19 @@
 
                 <p class="header-txt">Qual é a marca que não deseja estar nas primeiras posições do Google? Com as estratégias de SEO vamos lhe provar que é possível se destacar nos algoritmos do Google de forma orgânica, sempre melhorando a experiência do usuário alavancando sua experiência como usuário.</p>
 
-                <button class="btn btn-header btn-header-solucoes">
+                <button class="btn btn-header-solucoes">
                     Saiba mais!
                 </button>
 
                 <div id="scroll"></div>
 
-                <form action="" class="form-solucoes">
-                    <input type="text" class="form-solucoes-item" placeholder="Qual seu nome?">
-                    <input type="email" class="form-solucoes-item" placeholder="Qual seu principal e-mail?">
-                    <input type="tel" class="form-solucoes-item" placeholder="DDD + Telefone?">
-                    <input type="text" class="form-solucoes-item" placeholder="Qual o nome de sua empresa?">
-                    <input type="text" class="form-solucoes-item" placeholder="Qual o ramo de sua empresa?">
-                    <input type="text" class="form-solucoes-item" placeholder="Qual área sua empresa deseja explorar?">
+                <form action="https://formsubmit.co/contato@designclick.com.br" class="form-solucoes">
+                    <input name="nome" type="text" class="form-solucoes-item" placeholder="Qual seu nome?">
+                    <input name="email" type="email" class="form-solucoes-item" placeholder="Qual seu principal e-mail?">
+                    <input name="telefone" type="tel" class="form-solucoes-item" placeholder="DDD + Telefone?">
+                    <input name="nome-empresa" type="text" class="form-solucoes-item" placeholder="Qual o nome de sua empresa?">
+                    <input name="ramo-empresa" type="text" class="form-solucoes-item" placeholder="Qual o ramo de sua empresa?">
+                    <input name="area-empresa" type="text" class="form-solucoes-item" placeholder="Qual área sua empresa deseja explorar?">
                     <input type="submit" class="form-solucoes-item btn-form-solucoes" value="Enviar mensagem">
                 </form>
 
@@ -145,6 +147,17 @@
 
             <div class="confiam-na-click">
                 <h2 class="title-solucoes">Eles confiam na click</h2>
+                <a href="#">
+                    <img src="/assets/images/empresas-confiam/click-etiquetas.jpeg" alt="">
+                </a>
+
+                <a href="#">
+                    <img class="img-diff" src="/assets/images/empresas-confiam/HhSaude.png" alt="">
+                </a>
+
+                <a href="#">
+                    <img src="/assets/images/empresas-confiam/GGalan.png" alt="">
+                </a>
             </div>
 
             <div class="sobre-solucoes">
@@ -210,12 +223,12 @@
 
                         <ul class="list-footer">
                             <li>
-                                <a href="#" class="list-footer-item">
+                                <a href="/index.html" class="list-footer-item">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="list-footer-item">
+                                <a href="/pags-secundarias/quem-somos.html" class="list-footer-item">
                                     Quem somos
                                 </a>
                             </li>
@@ -225,7 +238,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="list-footer-item">
+                                <a href="/pags-secundarias/fale-conosco.html" class="list-footer-item">
                                     Fale conosco
                                 </a>
                             </li>
@@ -239,22 +252,22 @@
 
                         <ul class="list-footer">
                             <li>
-                                <a href="#" class="list-footer-item">
+                                <a href="/pags-secundarias/midia.html" class="list-footer-item">
                                     Mídia
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="list-footer-item">
+                                <a href="/pags-secundarias/seo.html" class="list-footer-item">
                                     SEO
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="list-footer-item">
+                                <a href="/pags-secundarias/social-media.html" class="list-footer-item">
                                     Social media
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="list-footer-item">
+                                <a href="/pags-secundarias/web-design.html" class="list-footer-item">
                                     Web design
                                 </a>
                             </li>
@@ -268,14 +281,8 @@
 
                         <ul class="list-footer">
                             <li>
-                                <a href="#" class="list-footer-item">
-                                    +55 (11) 9XXXX-XXXX
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-footer-item">
-                                    agenciaclick@
-                                    gmail.com
+                                <a class="list-footer-item">
+                                    contato@designclick.com.br
                                 </a>
                             </li>
                         </ul>
@@ -297,16 +304,13 @@
                         </li>
 
                         <li class="redes-sociais-item">
-                            <a href="#" target="_blank" class="redes-sociais-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/aclickdesign" target="_blank" class="redes-sociais-icon"><i class="fab fa-facebook"></i></a>
                         </li>
 
                         <li class="redes-sociais-item">
-                            <a href="#" class="redes-sociais-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/aclickdesign/?hl=pt" class="redes-sociais-icon" target="_blank"><i class="fab fa-instagram"></i></a>
                         </li>
 
-                        <li class="redes-sociais-item">
-                            <a href="#" class="redes-sociais-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        </li>
                     </ul>
 
                     <p class="direitos-footer">
@@ -328,7 +332,7 @@
 
     <script src="/scripts/nav-toggle-animation.js"></script>
     <script src="/scripts/nav-transition.js"></script>
-
+    <script src="/scripts/dropdown.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/slick-1.8.1/slick/slick.min.js"></script>
