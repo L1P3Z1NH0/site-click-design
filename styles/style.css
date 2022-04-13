@@ -914,6 +914,14 @@ ul{
         width: 100%;
     }
 
+    .btn-header-link{
+        grid-column: 1;
+    }
+
+    #scroll2 {
+        position: absolute;  
+    }
+
     .sobre-content{
         display: grid;
         grid-template-columns: 50rem 40vw;
