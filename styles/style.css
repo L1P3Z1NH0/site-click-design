@@ -155,7 +155,7 @@ li {
 }
 
 #scroll2 {
-    position: unset;  
+    position: initial;  
 }
 
 @-webkit-keyframes bounce {
